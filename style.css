@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.header {
+  background: #2c3e50;
+  color: rgb(96, 248, 235);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about {
+  background: #ecf0f1;
+}
+
+.projects {
+  background: #fff;
+}
+
+.project-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.project {
+  background: #e3f2fd;
+  padding: 30px;
+  border-radius: 10px;
+  width: 200px;
+  font-size: 18px;
+}
+
+.contact {
+  background: #ecf0f1;
+}
+
+.footer {
+  background: #090c0e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .hero, .about, .projects, .contact {
+    padding: 40px 15px;
+  }
+}
